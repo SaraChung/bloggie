@@ -44,4 +44,5 @@ group :development, :test do
 end
 
 gem 'devise', github: 'plataformatec/devise'
-
+gem 'bootstrap_form'
+gem 'bootstrap-sass', '~> 3.3.4'

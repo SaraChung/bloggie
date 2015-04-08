@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+ font-family: 'Roboto Condensed', sans-serif;
+ }
+
+.our-nav{
+  margin-top:20px;
+  margin-right:5px;
+}
+
+.homepage{
+  position: relative;
+  background: url("vim_front_page.png") no-repeat center center;
+  background-size: cover;
+  background-position: 0 70px;
+}
+
+.post-layout a{
+  text-decoration: none;
+}
+
+.post-layout p {
+  color: grey;
+}
+
+.post-layout a:hover{
+  text-decoration: none;
+  color: blue;
+}

@@ -3,15 +3,21 @@
 <head>
   <title>Bloggie</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<%= render 'layouts/navbar' %>
 <body>
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 
 </body>
 </html>
